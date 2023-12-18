@@ -27,41 +27,62 @@ Functionality : Supports all CRUD operations, password hashing, cloud database. 
 
 ### Project Images
 
-#### Login Page
+All Notes
 
-<pre>
-</pre>
+---
 
-<img src="./Screenshot/Login.png" alt="Logo">
-
-<pre>
-</pre>
-
-#### All Notes
-
-<pre>
-</pre>
 <img src="/Screenshot/AddNote.png" alt="Logo" >
-<pre>
-</pre>
 
-#### Edit Note
+---
 
-<pre>
-</pre>
+<img src="/Screenshot/Notes.png" alt="Logo" >
+
+---
+
+---
+
+About Us
+
+---
+
+<img src="/Screenshot/AboutUs.png" alt="Logo" >
+
+---
+
+<img src="/Screenshot/AboutUs2.png" alt="Logo" >
+
+---
+
+---
+
+Edit Note
+
+---
 
 <img src="/Screenshot/EditNote.png" alt="Logo" >
 
-<pre>
-</pre>
+---
 
-#### Sign Up
+---
 
-<pre>
-</pre>
+Sign Up
+
+---
+
 <img src="/Screenshot/SignUp.png" alt="Logo" >
-<pre>
-</pre>
+
+---
+
+---
+
+Login Page
+
+---
+
+<img src="./Screenshot/Login.png" alt="Logo">
+
+---
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With

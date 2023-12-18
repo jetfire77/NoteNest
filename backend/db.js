@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = "enter your uri";
+const mongoURI = "your uri";
 
 const connectToMongo = () => {
   mongoose

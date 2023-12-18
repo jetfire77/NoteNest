@@ -14,7 +14,7 @@ export const Notes = (props) => {
   // let history = useHistory();
   let navigate = useNavigate();
 
-  const { notes, getNotes, editNote } = context;
+  const { notes, getNotes, editNote } = context; // destructuring taking out the value of notes, getNotes, editNote  from context
   useEffect(() => {
     if (localStorage.getItem("token")) {
       getNotes();
@@ -165,20 +165,31 @@ export const Notes = (props) => {
       </div>
 
       <div className="row my-3">
-        <h2>Your Notes </h2>
+        <h1 class="display-5 text-center mb-5"> Your Notes </h1>
+
         <div className="container mx-2">
           {notes.length === 0 && "No notes to display"}{" "}
         </div>
-        {notes.map((note) => {
-          return (
-            <Noteitem
-              key={note._id}
-              updateNote={updateNote}
-              showAlert={props.showAlert}
-              note={note}
-            />
-          );
-        })}
+
+        <div
+          className="row"
+          style={{
+            backgroundColor: "skyblue",
+            // display: "inline-block",
+            borderRadius: "5px",
+          }}
+        >
+          {notes.map((note) => {
+            return (
+              <Noteitem
+                key={note._id}
+                updateNote={updateNote}
+                showAlert={props.showAlert}
+                note={note}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

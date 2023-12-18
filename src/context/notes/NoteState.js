@@ -1,6 +1,8 @@
 import NoteContext from "./noteContext";
 import { useState } from "react";
 
+// it is that state which will be accessible to all components using context api
+
 const NoteState = (props) => {
   const host = "http://localhost:5000";
   //   const s1 = {
@@ -41,7 +43,7 @@ const NoteState = (props) => {
 
   // Add a Note
   const addNote = async (title, description, tag) => {
-    // TODO: API Call
+    //  API Call
     const response = await fetch(`${host}/api/notes/addnote/`, {
       method: "POST",
 
@@ -58,7 +60,7 @@ const NoteState = (props) => {
   };
 
   // Delete a Note
-  // TODO: API Call
+  // TODO: API Call to delete in backend also not only deleting in front end.
   const deleteNote = async (id) => {
     const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
       method: "DELETE",
@@ -77,9 +79,10 @@ const NoteState = (props) => {
     });
     setNotes(newNotes);
   };
+
   // Edit a Note
   const editNote = async (id, title, description, tag) => {
-    // TODO: API Call
+    // API Call
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
       method: "PUT",
 
@@ -93,7 +96,7 @@ const NoteState = (props) => {
     const json = await response.json();
     console.log(json);
 
-    let newNotes = JSON.parse(JSON.stringify(notes));
+    let newNotes = JSON.parse(JSON.stringify(notes)); // making a copy of notes
     // Logic to edit in client
     for (let index = 0; index < newNotes.length; index++) {
       const element = newNotes[index];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // useLocation because to highlight on which link we are
 import { useNavigate } from "react-router-dom";
 // import { useEffect } from "react";
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-light  navbar-custom">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
             NoteNest
